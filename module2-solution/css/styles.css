@@ -1,0 +1,100 @@
+/********** Base styles **********/
+
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  border: 0px;
+}
+body {
+  font-family: Helvetica, serif, arial;
+  margin: 20px;
+}
+.row {
+  width: 100%;
+}
+
+h1 {
+  font-size: 2.5em;
+  padding: 10px 10px;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 70px;
+}
+section {
+  color: black;
+  width: 90%;
+  border: 1px solid black;
+  background-color: lightgray;
+  margin-top: 1%;
+  margin-right: auto;
+  margin-left: auto;
+  padding-bottom: 10px;
+}
+section h2 {
+  font-size: 1.1em;
+  border: 1px solid black;
+  color: black;
+  float: right;
+  margin-bottom: 5px;
+  padding-right: 30px;
+  padding-left: 30px;
+  padding-bottom: 3px;
+  padding-top: 1px;
+}
+section p {
+  padding-top: 32px;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+#chicken {
+  background-color: lightcoral;
+}
+#beef {
+  background-color: darkred;
+  color: white;
+}
+#sushi {
+  background-color: burlywood;
+}
+
+
+
+/********** Desktop Version **********/
+@media (min-width: 992px) {
+    .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {
+      float: left;
+    }
+    .col-lg-4 {
+      width: 33%;
+    }
+    .notlastsection {
+      margin-right: 0.5%;
+    }
+}
+/********** Tablet Version **********/
+@media (min-width: 768px) and (max-width: 991px) {
+    .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
+      float: left;
+    }
+    .col-md-6 {
+      width: 49.5%;
+    }
+    .col-md-12 {
+      width: 100%;
+    }
+    .notlastsectionintablet {
+      margin-right: 1%;
+    }
+}
+/********** Mobile Version **********/
+@media (max-width: 767px) {
+    .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12 {
+      float: left;
+    }
+    .col-sm-12 {
+      width: 100%;
+    }
+    section {
+      margin-top: 2%;
+    }
+}
